@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ᴏᴅᴇʟ 𝟽/𝟸𝟺 </></title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #111; color: white; }
+        .sidebar {
+            width: 75%;
+            max-width: 300px;
+            height: 100vh;
+            background: #1b1b32;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .logo {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+        .logo span { display: block; font-size: 14px; color: #d4d4d4; }
+        .menu { margin-top: 10px; }
+        .menu h3 { font-size: 14px; color: #999; margin-bottom: 5px; }
+        .menu .dropdown {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            margin-bottom: 5px;
+        }
+        .menu .dropdown:hover { background: #333; }
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dropdown-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .dropdown.open + .dropdown-content { display: block; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            ᴏᴅᴇʟ 𝟽/𝟸𝟺 </> <br>
+            <span>ᴏᴅᴇʟ 𝟽/𝟸𝟺 </></span>
+        </div>
+        
+        <div class="menu">
+            <h3>MENU</h3>
+            <div class="dropdown">🏠 Anasayfa ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+            
+            <h3>PAGES</h3>
+            <div class="dropdown">👑 Instagram İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">🏢 Whatsapp İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">📞 Telefon İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">💾 Galeri İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">🎨 Tiktok İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">📹 Youtube İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+
+            <div class="dropdown">🎮 Oyun İşlemleri ▼</div>
+            <div class="dropdown-content"><p>Sorgular</p></div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.dropdown').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+
+</body>
+</html>

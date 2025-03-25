@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">1-ci Buton</button>
+<button id="btn2">2-ci Buton</button>
+<button onclick="btn3()">3-cü Buton</button>
+<script>
+// class User {
+//     constructor(ad, soyad, dogumTarixi) {
+//         this.ad = ad;
+//         this.soyad = soyad;
+//         this.dogumTarixi = new Date(dogumTarixi);
+//     }
+
+//     yasHesablayan() {
+//         const indikiTarix = new Date();
+//         const ferqMillisaniye = indikiTarix - this.dogumTarixi;
+//         const yas = Math.floor(ferqMillisaniye / (1000 * 60 * 60 * 24 * 365.25));
+//         return yas;
+//     }
+
+//     static check() {
+//         console.log("Men User clasinin funksiyasiyam");
+//     }
+// }
+
+// const user1 = new User("Ali", "Veliyev", "2000-05-15");
+// console.log(${user1.ad} ${user1.soyad} ${user1.yasHesablayan()} yaşındadır.);
+
+// User.check();
+
+
+// tap2
+// const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+// document.getElementById("btn1").addEventListener("click", () => {
+//     let random = getRandom(19, 90);
+//     console.log(random);
+// });
+
+// document.getElementById("btn2").addEventListener("click", () => {
+//     let random = getRandom(70, 150);
+//     console.log(random);
+// });
+
+
+// function btn3(){
+//     console.log("bu butona kliklediniz");
+    
+// }
+
+
+
+class Insan {
+    constructor(ad, soyad, yas) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.yas = yas;
+    }
+
+    ekran() {
+     console.log(this.ad + this.soyad);
+     
+    }
+
+    yasGoster() {
+        console.log(this.yas);
+    }
+
+    yasArtir() {
+        this.yas += 30;
+        console.log(this.yas);
+    }
+}
+
+const nergiz = new Insan("Nergiz", "Hesenli", 23);
+
+nergiz.ekran();    // Nergiz Hesenli
+nergiz.yasGoster(); // Yaş: 23
+nergiz.yasArtir();  // Yeni yaş: 53
+
+</script>
+</body>
+</html>

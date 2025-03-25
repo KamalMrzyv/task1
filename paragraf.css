@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimzGbRNnz4xxuB3wGILDtsskpaFsv_H1VFA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bildiris{
+    width: 100%;
+    height: 100px;
+    padding-top: 300px;
+}
+
+.bildiris img{
+    height: auto;
+    width: 550px;
+}
+
+.bildiris-text{
+    margin-left: 30px;
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bildiris-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.bildiris-text p{
+    font-size: 20px;
+    color: rgb(159, 229, 236);
+
+}
+
+span{
+    font-size: 25px;
+}
+
+.yuxari {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(70, 130, 180, 0.8);
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.sehifem {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.sehifem li {
+    margin-right: 20px;
+}
+
+.sehifem li button   {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 5px;
+
+}
+
+header{
+ margin-top: -300px;
+}
+
+a{
+    text-decoration: none;
+}

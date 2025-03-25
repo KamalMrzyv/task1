@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temizleme İşlemi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .amount-box {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e2e2e2;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .amount-box span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .site-list {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .site-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .site-list li {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Temizleme İşlemi</h1>
+        </div>
+
+        <div class="content">
+            <!-- Temizlenecek ve Temizlenmiş Paralar -->
+            <div class="amount-box">
+                <span>Temizlenmiş Para: 350,000 ₺</span>
+                <span>Temizlenecek Para: 1,500,000 ₺</span>
+            </div>
+
+            <!-- Ad Soyad -->
+            <div class="form-group">
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" placeholder="Ad ve Soyadınızı girin">
+            </div>
+
+            <!-- Göndereceğiniz Para Miktarı -->
+            <div class="form-group">
+                <label for="amount">Göndereceğiniz Para Miktarı:</label>
+                <input type="text" id="amount" placeholder="Göndereceğiniz miktarı girin (₺)">
+            </div>
+
+            <!-- IBAN veya Kripto Hesap Girişi -->
+            <div class="form-group">
+                <label for="iban">IBAN veya Kripto Hesap Numarası:</label>
+                <input type="text" id="iban" placeholder="IBAN veya Kripto Hesabınızı girin">
+            </div>
+
+            <!-- Site Listesi -->
+            <div class="site-list">
+                <h3>Desteklenen Bankalar, Kumar Siteleri ve Ödeme Yöntemleri</h3>
+                <ul>
+                    <!-- Bankalar -->
+                    <li>Ziraat Bankası</li>
+                    <li>Garanti BBVA</li>
+                    <li>İş Bankası</li>
+                    <li>Yapı Kredi</li>
+                    <li>Halkbank</li>
+                    <li>VakıfBank</li>
+                    <li>Akbank</li>
+                    <li>QNB Finansbank</li>
+                    <li>DenizBank</li>
+                    <li>Şekerbank</li>
+                    <li>ING Bank</li>
+                    <li>TEB (Türk Ekonomi Bankası)</li>
+                    <li>Kuveyt Türk</li>
+                    <li>Albaraka Türk</li>
+
+                    <!-- Ödeme Yöntemleri -->
+                    <li>Papara</li>
+                    <li>PayFix</li>
+                    <li>İninal</li>
+                    <li>FAST</li>
+                    <li>Western Union</li>
+                    <li>Wise</li>
+                    <li>Revolut</li>
+
+                    <!-- Kumar Siteleri -->
+                    <li>Bet365</li>
+                    <li>Superbahis</li>
+                    <li>Restbet</li>
+                    <li>TrBet</li>
+                    <li>Youwin</li>
+                    <li>Tempobet</li>
+                    <li>Casino Metropol</li>
+                    <li>SlotV</li>
+                    <li>Betfair</li>
+                    <li>MarathonBet</li>
+                    <li>Bahigo</li>
+                    <li>Vbet</li>
+                </ul>
+            </div>
+
+            <!-- Yükleme Butonu -->
+            <button class="submit-btn">İşlemi Başlat</button>
+        </div>
+    </div>
+
+</body>
+</html>
